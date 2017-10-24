@@ -1,7 +1,24 @@
 /* here you can put your own css to customize and override the theme */
 
+/* VARIABLES */
+$dark-gray:     #333333;
+$gray:          #666666;
+$light-gray:    #999999;
+$silver:        #cccccc;
+$platinum:      #E6E6E6;
+$titanium:      #f2f2f2;
+$white:         #ffffff;
+
+$green:         #5b8300;
+$lime:          #94D120;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
 .page-header.navbar {
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid $silver;
     height: 70px;
     min-height: 70px;
 
@@ -17,14 +34,130 @@
 .sisectorial-logo {
     float: left;
     display: block;
-    width: 235px;
-    height: 50px;
+    max-width: 404px;
+    height: auto;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+
+    img {
+        width: 100%;
+    }
+}
+/* --- */
+
+/* SIDEBAR */
+.page-sidebar {
+    text-align: center;
+
+    .sidebar-toggler {
+       background: $white;
+       border: 1px solid $silver;
+       width: 84%;
+       margin: 30px 0 0;
+       float: none;
+       display: inline-block;
+       padding: 0;
+       border-radius: 15px !important;
+       height: 30px;
+
+        &:after {
+            content: "\f100";
+            font-family: FontAwesome;
+            font-size: 24px;
+            color: $lime;
+            line-height: 26px;
+        }
+
+        &:hover {
+            background: $titanium;
+        }
+    }
 }
 
+.page-sidebar .page-sidebar-menu, 
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu {
+    text-align: left;
+}
+
+.page-sidebar .page-sidebar-menu li > a > .arrow:before, 
+.page-sidebar-closed.page-sidebar-fixed 
+.page-sidebar:hover .page-sidebar-menu li > a > .arrow:before {
+    content: "\f105";
+    color: $light-gray;
+}
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a, 
+.page-sidebar .page-sidebar-menu > li > a {
+    border-top: 1px solid $platinum;
+    color: $light-gray;
+    padding: 15px 10px;
+    text-transform: uppercase;
+}
+
+.page-sidebar .page-sidebar-menu > li.active > a, 
+.page-sidebar .page-sidebar-menu > li.active.open > a {
+    background: $white;
+    color: $lime;
+}
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a,
+.page-sidebar .page-sidebar-menu > li.active > a,
+.page-sidebar .page-sidebar-menu > li.active.open > a  {
+    
+    > .arrow:before, 
+    > li.active > a > .arrow.open:before, 
+    > li.active.open > a > .arrow:before, 
+    > li.active.open > a > .arrow.open:before {
+        color: $lime;
+    }
+}
+
+.page-sidebar .page-sidebar-menu > li.active.open + li > a {
+    border-top: 1px solid $platinum;
+}
+
+.page-sidebar .page-sidebar-menu > li > a > .arrow:before, 
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .arrow:before {
+    top: 12px;
+}
+
+.page-sidebar .page-sidebar-menu > li:hover > a, .page-sidebar .page-sidebar-menu > li.open > a {
+    background: $dark-gray;
+    color: $lime;
+}
+
+.page-sidebar .page-sidebar-menu > li.active > a > .selected {
+    display: none;
+}
+
+.page-sidebar .page-sidebar-menu > li.active > a:hover, 
+.page-sidebar .page-sidebar-menu > li.active.open > a:hover {
+    background: $white;
+}
+
+.page-sidebar .page-sidebar-menu .sub-menu {
+    margin: 0;
+
+    li {
+        background: $white;
+        > a {
+            color: $light-gray;
+            background: $white;
+
+            &:hover {
+                background: $titanium !important;
+                color: $lime;
+            }
+        }
+    }
+}
+/* --- */
+
+/* PAGE CONTENT */
 .page-content {
-    background: #f2f2f2;
+    background: $titanium;
     -webkit-box-shadow: inset 35px 0px 28px -38px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 35px 0px 28px -38px rgba(0,0,0,0.75);
     box-shadow: inset 35px 0px 28px -38px rgba(0,0,0,0.75);
@@ -44,12 +177,15 @@
         }
     }
 }
+/* --- */
 
+/* PAGE FOOTER */
 .page-footer {
-    background-color:  #666;
+    background-color: $gray;
     text-align: center;
 
     .page-footer-inner {
         float: none;
     }
 }
+/* --- */

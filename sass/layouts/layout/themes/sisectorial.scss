@@ -6,6 +6,8 @@
 @import '../_variables'; // theme level variables 
 
 // Theme Colors Settigns
+$lime:          #94D120;
+$gray:          #666666;
 
 // Main settings
 $theme-name:                                                    		"darkblue";  
@@ -136,11 +138,11 @@ $sidebar-menu-devider-border-color:                             		darken(#3f4b5a
 
 $sidebar-menu-link-font-color:                                  		#b4bcc8 !default;
 $sidebar-menu-link-font-color-on-hover:                         		$sidebar-menu-link-font-color !default;
-$sidebar-menu-link-font-color-on-active:                        		#ffffff !default;
+$sidebar-menu-link-font-color-on-active:                        	    $lime;
 
-$sidebar-menu-link-icon-font-color:                             		#606C7D !default;
+$sidebar-menu-link-icon-font-color:                             		$gray !default;
 $sidebar-menu-link-icon-font-color-on-active:                   		$sidebar-menu-link-font-color-on-active !default;
-$sidebar-menu-link-icon-font-color-on-hover:                            $sidebar-menu-link-icon-font-color !default; 
+$sidebar-menu-link-icon-font-color-on-hover:                            $lime !default; 
 
 $sidebar-menu-link-bg-color-on-hover:                           		#2C3542 !default;
 $sidebar-menu-link-bg-color-on-active:                          		$brand-main-color;  
