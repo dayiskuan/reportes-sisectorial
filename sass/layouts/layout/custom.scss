@@ -1,24 +1,28 @@
 /* here you can put your own css to customize and override the theme */
 
 /* VARIABLES */
+$black:         #000000;
 $dark-gray:     #333333;
 $gray:          #666666;
 $light-gray:    #999999;
 $silver:        #cccccc;
 $platinum:      #E6E6E6;
 $titanium:      #f2f2f2;
+$smoke:         #f6f6f6;
 $white:         #ffffff;
 
 $green:         #5b8300;
-$lime:          #94D120;
+$lime:          #7DBB58;
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: $gray;
+    font-weight: 300;
 }
 
 /* HEADER */
 .page-header.navbar {
-    border-bottom: 2px solid $silver;
+    border-bottom: 1px solid $silver;
     height: 70px;
     min-height: 70px;
 
@@ -155,12 +159,33 @@ body {
 }
 /* --- */
 
+/* SIDEBAR SEARCH */
+.sidebar-search-wrapper {
+    font-weight: 300;
+}
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search .input-group .input-group-btn .btn > i, 
+.page-sidebar .sidebar-search .input-group .input-group-btn .btn > i,
+.page-sidebar-closed .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search.open .remove > i, 
+.page-sidebar-closed .page-sidebar .sidebar-search.open .remove > i {
+    color: $lime !important;
+}
+
+.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open .input-group {
+    margin-left: 27px;
+    border-top: 1px solid $platinum;
+    border-right: 1px solid $platinum;
+    border-bottom: 1px solid $platinum;
+}
+/* --- */
+
 /* PAGE CONTENT */
 .page-content {
     background: $titanium;
-    -webkit-box-shadow: inset 35px 0px 28px -38px rgba(0,0,0,0.75);
+    /*-webkit-box-shadow: inset 35px 0px 28px -38px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 35px 0px 28px -38px rgba(0,0,0,0.75);
-    box-shadow: inset 35px 0px 28px -38px rgba(0,0,0,0.75);
+    box-shadow: inset 35px 0px 28px -38px rgba(0,0,0,0.75);*/
+    border-left: 1px solid $platinum;
 }
 
 .page-content-white,
@@ -177,6 +202,73 @@ body {
         }
     }
 }
+
+.page-content-white, 
+.page-container-bg-solid {
+
+    .page-title {
+        color: $black;
+        font-family: 'Montserrat', sans-serif;
+
+        small {
+            color: $light-gray
+        }
+    }
+}
+/* --- */
+
+/* PORLET */
+.portlet {
+    border-radius: 20px !important;
+}
+
+.portlet.light {
+
+    &.bordered>.portlet-title {
+        border-bottom: 1px solid $silver;
+    }
+    
+    >.portlet-title {
+
+        >.tools>a.fullscreen {
+            width: 13px;
+            color: $lime;
+        }
+        
+        >.caption {
+
+            .tooltips {
+                float: left;
+                margin-left: 7px;
+
+                i {
+                    color: $black;
+                }
+            }
+        
+            >.caption-subject {
+                text-transform: none !important;
+                font-weight: 400 !important;
+                float: left;
+            }
+        }
+    }
+}
+/* --- */
+
+/* BREADCRUMBS */
+.page-content-white .page-bar .page-breadcrumb,
+.page-container-bg-solid .page-bar .page-breadcrumb {
+
+    > li > a {
+        color: $lime;
+
+        &:hover {
+            opacity: 0.7;
+            text-decoration: none;
+        }
+    }
+}
 /* --- */
 
 /* PAGE FOOTER */
@@ -188,4 +280,28 @@ body {
         float: none;
     }
 }
+
+.scroll-to-top > i {
+    color: $dark-gray;
+}
 /* --- */
+
+
+
+@media (max-width: 991px) {
+
+    .page-sidebar {
+        background: $smoke;
+
+        .page-sidebar-menu {
+            
+            > li > a, {
+                background: $titanium;
+            }
+
+            .sidebar-search input {
+                background: $smoke !important;
+            }
+        }
+    }
+}

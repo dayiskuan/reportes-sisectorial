@@ -6,12 +6,21 @@
 @import '../_variables'; // theme level variables 
 
 // Theme Colors Settigns
-$lime:          #94D120;
+$black:         #000000;
+$dark-gray:     #333333;
 $gray:          #666666;
+$light-gray:    #999999;
+$silver:        #cccccc;
+$platinum:      #E6E6E6;
+$titanium:      #f2f2f2;
+$white:         #ffffff;
+
+$green:         #5b8300;
+$lime:          #7DBB58;
 
 // Main settings
 $theme-name:                                                    		"darkblue";  
-$brand-main-color:                                               		lighten(#32c5d2, 1%) !default;      
+$brand-main-color:                                               		lighten($lime, 1%) !default;      
 $brand-main-font-color:													#ffffff !default;
   
 // Body and header
@@ -54,7 +63,7 @@ $header-hor-menu-dropdown-menu-link-icon-color-on-hover:        		lighten($heade
 $header-hor-menu-dropdown-menu-link-icon-color-on-active:        		lighten($header-hor-menu-dropdown-menu-link-icon-color, 14%);     
 
 //** Light Mega Menu
-$header-light-hor-menu-mega-menu-header-font-color:                   	#666; 
+$header-light-hor-menu-mega-menu-header-font-color:                     $gray; 
 
 $header-light-hor-menu-default-link-font-color:                       	$header-hor-menu-default-link-font-color; 
 $header-light-hor-menu-default-link-font-color-on-hover:              	$header-hor-menu-default-link-font-color-on-hover;
@@ -68,8 +77,8 @@ $header-light-hor-menu-default-link-bg-color-on-hover:                	$header-h
 $header-light-hor-menu-default-link-bg-color-on-active:               	$header-hor-menu-default-link-bg-color-on-active;
  
 $header-light-hor-menu-default-link-bg-color-on-onen:               	lighten(#FAFAFC, 2%);
-$header-light-hor-menu-default-link-font-color-on-onen:               	#333; 
-$header-light-hor-menu-default-link-icon-color-on-onen:               	#333;
+$header-light-hor-menu-default-link-font-color-on-onen:               	$dark-gray; 
+$header-light-hor-menu-default-link-icon-color-on-onen:                 $dark-gray;
 
 // Light Mega Menu Sub Menu 
 $header-light-hor-menu-dropdown-menu-bg-color:                        	$header-light-hor-menu-default-link-bg-color-on-onen;
@@ -151,7 +160,7 @@ $sidebar-menu-arrow-color:                                      		$sidebar-menu-
 $sidebar-menu-arrow-color-on-active:                            		$sidebar-menu-link-font-color-on-active !default;
 $sidebar-menu-arrow-color-on-hover:                                     $sidebar-menu-link-icon-font-color-on-hover !default;
 
-$sidebar-menu-sub-menu-box-shadow-color:                                $sidebar-menu-link-bg-color-on-hover !default;
+$sidebar-menu-sub-menu-box-shadow-color:                                $light-gray !default;
 $sidebar-menu-sub-menu-link-font-color:                         		#b4bcc8 !default; 
 $sidebar-menu-sub-menu-link-icon-font-color:                    		$sidebar-menu-arrow-color !default;
 $sidebar-menu-sub-menu-link-bg-color-on-hover:                  		lighten($bg-color, 4%) !default;
@@ -181,10 +190,10 @@ $mobile-light-sidebar-menu-sub-menu-link-bg-color-on-hover:             lighten(
 
 // Sidebar search
 $sidebar-search-bg-color:                                               darken($bg-color, 5%) !default;
-$sidebar-search-bottom-border-color:                            		lighten($sidebar-menu-devider-border-color, 3%) !default;   
-$sidebar-search-full-border-color:                              		lighten($sidebar-menu-devider-border-color, 3%) !default;     
-$sidebar-search-input-font-color:                               		lighten($sidebar-menu-devider-border-color, 8%) !default;
-$sidebar-search-input-placeholder-font-color:                   		lighten($sidebar-menu-devider-border-color, 8%) !default;
+$sidebar-search-bottom-border-color:                            		$platinum;   
+$sidebar-search-full-border-color:                              		$platinum !default;     
+$sidebar-search-input-font-color:                               		$light-gray !default;
+$sidebar-search-input-placeholder-font-color:                   	    $light-gray !default;
 
 // Footer
 $footer-default-font-color:                                     		lighten($bg-color, 40%) !default;     
