@@ -28,6 +28,20 @@ body {
   .sisectorial-logo img {
     width: 100%; }
 
+.page-header.navbar .menu-toggler.responsive-toggler {
+  margin: 17px 6px 0 6px;
+  background: #ffffff;
+  padding: 8px 9px 5px;
+  border-radius: 50% !important;
+  border: 1px solid #cccccc; }
+  .page-header.navbar .menu-toggler.responsive-toggler span,
+  .page-header.navbar .menu-toggler.responsive-toggler span:after,
+  .page-header.navbar .menu-toggler.responsive-toggler span:before {
+    width: 15px;
+    background: #7DBB58; }
+  .page-header.navbar .menu-toggler.responsive-toggler:hover, .page-header.navbar .menu-toggler.responsive-toggler:focus {
+    background: #f2f2f2; }
+
 /* --- */
 /* SIDEBAR */
 .page-sidebar {

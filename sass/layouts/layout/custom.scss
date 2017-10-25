@@ -49,6 +49,26 @@ body {
         width: 100%;
     }
 }
+
+.page-header.navbar .menu-toggler.responsive-toggler {
+    margin: 17px 6px 0 6px;
+    background: $white;
+    padding: 8px 9px 5px;
+    border-radius: 50% !important; 
+    border: 1px solid $silver;
+
+    span,
+    span:after,
+    span:before {
+        width: 15px;
+        background: $lime;
+    }
+
+    &:hover,
+    &:focus {
+        background: $titanium;
+    }
+}
 /* --- */
 
 /* SIDEBAR */
