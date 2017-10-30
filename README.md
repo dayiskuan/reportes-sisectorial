@@ -3,5 +3,5 @@ Sass project for Reportes Sisectorial site
 
 ## Instructions:
 
-+ $ install
++ $ npm install
 + $ gulp sass:watch
