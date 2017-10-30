@@ -13,6 +13,7 @@ $white:         #ffffff;
 
 $green:         #5b8300;
 $lime:          #7DBB58;
+$lime-light:    #87d759;
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -40,10 +41,7 @@ body {
     display: block;
     max-width: 404px;
     height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 9px;
+    padding: 13px 20px;
 
     img {
         width: 100%;
@@ -69,6 +67,28 @@ body {
         background: $titanium;
     }
 }
+
+.page-header.navbar .top-menu {
+    padding-right: 20px;
+
+    .btn.btn-outline {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
+
+.log-in, 
+.min-logo{
+    float:left;
+}
+
+.log-in {
+    padding-top: 20px;
+}
+
+.min-logo{
+    padding: 11px 20px 11px 0;
+}
 /* --- */
 
 /* SIDEBAR */
@@ -79,7 +99,7 @@ body {
        background: $white;
        border: 1px solid $silver;
        width: 84%;
-       margin: 30px 0 0;
+       margin: 20px 0;
        float: none;
        display: inline-block;
        padding: 0;
@@ -87,11 +107,13 @@ body {
        height: 30px;
 
         &:after {
-            content: "\f100";
-            font-family: FontAwesome;
-            font-size: 24px;
-            color: $lime;
-            line-height: 26px;
+            content: '';
+            background-image: url('../img/arrow-menu.png');
+            width: 17px;
+            height: 26px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position-y: 50%;
         }
 
         &:hover {
@@ -179,6 +201,66 @@ body {
 }
 /* --- */
 
+/* MENU ICONS */
+.page-sidebar .page-sidebar-menu > li  {
+
+    i {
+        background-image: url('../img/icons_menu.png');
+        width: 16px;
+        height: 16px;
+        margin-top: 1px;
+        float: left;
+
+        &.icon-home {
+            background-image: none;
+        }
+    }
+
+    &.abastecimiento {
+
+        i {
+            background-position-y: -16px;
+        }
+    }
+
+    &.insumos {
+        i {
+            background-position-y: -32px;
+        }
+    }
+
+    &.comercio-exterior {
+        i {
+            background-position-y: -48px;
+        }
+    }
+
+    &.financiamiento {
+        i {
+            background-position-y: -64px;
+        }
+    }
+
+    &.vivienda-rural {
+        i {
+            background-position-y: -80px;
+        }
+    }
+
+    &.open {
+
+        i {
+            background-position-x: -16px;
+        }
+    }
+}
+
+.page-sidebar .page-sidebar-menu > li > a > i,
+.page-sidebar .page-sidebar-menu > li > a > [class^="icon-"] {
+    margin-right: 7px;
+}
+/* --- */
+
 /* SIDEBAR SEARCH */
 .sidebar-search-wrapper {
     font-weight: 300;
@@ -189,6 +271,11 @@ body {
 .page-sidebar-closed .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search.open .remove > i, 
 .page-sidebar-closed .page-sidebar .sidebar-search.open .remove > i {
     color: $lime !important;
+    background-image: none;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    float: none;
 }
 
 .page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open .input-group {
@@ -196,6 +283,63 @@ body {
     border-top: 1px solid $platinum;
     border-right: 1px solid $platinum;
     border-bottom: 1px solid $platinum;
+}
+/* --- */
+
+/* REDES SOCIALES */
+.redes-sociales {
+    p {
+        margin: 10px 0;
+        color: $light-gray;
+    }
+
+    ul{
+        list-style:none;
+        padding: 0;
+        margin: 0 30px;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 5px 7px;
+
+            a {
+                background-image: url('../img/redes.png');
+                width: 22px;
+                height: 22px;
+                float: left;
+
+                &:hover,
+                &:focus {
+                    opacity: .7;
+                }
+
+                &.instagram {
+                    background-position-y: -22px;
+                }
+
+                &.twitter {
+                    background-position-y: -45px;
+                }
+
+                &.linkedin {
+                    background-position-y: -68px;
+                }
+
+                &.googgle-plus {
+                    background-position-y: -90px;
+                }
+
+                &.youtube {
+                    background-position-y: -113px;
+                }
+
+                &.flickr {
+                    background-position-y: -136px;
+                }
+            }
+        }
+    }
 }
 /* --- */
 
@@ -235,6 +379,10 @@ body {
         }
     }
 }
+
+.page-content-wrapper .page-content .page-title small {
+    padding-top: 7px;
+}
 /* --- */
 
 /* PORLET */
@@ -250,26 +398,57 @@ body {
     
     >.portlet-title {
 
-        >.tools>a.fullscreen {
-            width: 13px;
-            color: $lime;
+        >.tools {
+            padding-bottom: 0;
+
+            >a.fullscreen {
+                width: 13px;
+                color: $lime;
+            }
         }
         
         >.caption {
 
+            > .caption-subject {
+                display: inline;
+                float: none;
+                text-transform: none !important;
+                font-weight: 400 !important;
+            }
+
             .tooltips {
-                float: left;
-                margin-left: 7px;
 
                 i {
                     color: $black;
+                    display: inline;
+                    float:none;
+                    font-size: 15px;
+                }
+
+                &:hover {
+                    text-decoration: none;
                 }
             }
-        
-            >.caption-subject {
-                text-transform: none !important;
-                font-weight: 400 !important;
-                float: left;
+        }
+    }
+
+    .portlet-footer {
+        border-top: 1px solid $platinum;
+        padding-top: 15px;
+        text-align: right;
+        margin-top: 15px;
+
+        .btn.btn-outline.default {
+            font-size: 12px;
+
+            i {
+                background: url('../img/arrow-buttons.png');
+                width: 7px;
+                height: 16px;
+                float: right;
+                background-repeat: no-repeat;
+                background-position-y: 50%;
+                margin-left: 5px;
             }
         }
     }
@@ -286,6 +465,75 @@ body {
         &:hover {
             opacity: 0.7;
             text-decoration: none;
+        }
+    }
+}
+/* --- */
+
+/* BTN */
+.btn.btn-outline{
+    border-radius: 40px !important;
+
+    &.default {
+        color: $lime;
+        border-color: $silver;
+
+        &.active, 
+        &:active, 
+        &:active:focus, 
+        &:active:hover, 
+        &:focus, 
+        &:hover {
+            background: $titanium;
+            border-color: $silver;
+            color: $lime;
+        }
+    }
+
+    &.green{
+        border-color: $lime;
+        color: $lime;
+
+        &.active, 
+        &:active, 
+        &:active:focus, 
+        &:active:hover, 
+        &:focus, 
+        &:hover {
+            background: $lime;
+            border-color: $lime;
+        }
+    }
+}
+/* --- */
+
+/* TABS */
+.nav-tabs {
+    border-bottom: 1px solid $silver;
+    font-weight: 400;
+
+    >li {
+
+        a {
+            color: $lime;
+
+            &:focus, &:hover {
+                background: transparent;
+                border-color: transparent;
+                color: $lime-light;
+            }
+        }
+
+        &.active>a, 
+        &.active>a:focus,
+        &.active>a:hover {
+            color: $dark-gray;
+            background-color: transparent;
+            border-left: 1px solid $silver;
+            border-right: 1px solid $silver;
+            border-top: 1px solid $silver;
+            border-bottom: 1px solid $titanium;
+            border-radius: 13px 12px 0 0 !important;
         }
     }
 }
@@ -308,6 +556,28 @@ body {
 
 
 
+
+@media (max-width: 934px) { 
+
+    .page-header.navbar .top-menu {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .log-in, .min-logo {
+        float: none;
+        display: inline-block;
+    }
+
+    .page-content {
+        border-top: 1px solid $platinum;
+    }
+} 
+
+
+
+
 @media (max-width: 991px) {
 
     .page-sidebar {
@@ -322,6 +592,74 @@ body {
             .sidebar-search input {
                 background: $smoke !important;
             }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 489px) {
+
+    .page-header.navbar {
+        height: 100px;
+        min-height: 51px;
+        border-bottom: none;
+        padding: 0;
+    }
+
+    .page-header.navbar .menu-toggler.responsive-toggler {
+        margin-top: 8px;
+        margin-right: 16px;
+    }
+
+    .sisectorial-logo {
+        max-width: 219px;
+        padding: 13px 10px 13px 15px;
+    }
+
+    .page-header.navbar .top-menu {
+        float: right;
+        border-top: 1px solid $silver;
+    }
+
+    .min-logo {
+        width: 150px; 
+        padding-right: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .log-in {
+        padding-top: 0;
+    }
+
+    .page-footer {
+        font-size: 11px;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+
+    .page-sidebar-closed  {
+
+        .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed > li > a {
+            padding-left: 14px;
+            padding-bottom: 10px;
+        }
+
+        .page-sidebar-menu > li i {
+            float: none;
+            display: inline-block;
+            margin-top: 0;
+        }
+
+        .redes-sociales {
+            display: none;
         }
     }
 }
