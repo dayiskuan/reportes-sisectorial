@@ -1,6 +1,8 @@
 @import '../global/_variables'; // global variables.
 @import '../global/components/_mixins'; // global mixings.
 
+@import '../layouts/layout/_variables'; // theme level variables 
+
 /* 
 Search Page
 ***/
@@ -11,21 +13,19 @@ Search Page
 	// BEGIN : BORDER CONTAINERS
 	.bordered{
 		border:1px solid;
-		border-color: $general-panel-border-color;
+		border-color: $silver;
 	}
 	// END : BORDERED CONTAINERS
 
 	// BEGIN: SEARCH BAR
 	.search-bar{
-		padding:20px;
 		margin-bottom: 40px;
-		background-color: #fff;
 
 		input{
-			border:none;
-			background-color: #f3f6f9;
-			color:#a0a9b4;
+			background-color: $white;
 			height:55px;
+			border: 1px solid $mercury !important;
+			border-radius: 20px 0 0 20px !important;
 		}
 
 		button{
@@ -33,7 +33,7 @@ Search Page
 			height:55px;
 			width: 130px;
 			margin-left: -3px;
-			margin-top: -2px;
+			border-radius: 0 20px 20px 0 !important;
 		}
 
 		.search-desc{

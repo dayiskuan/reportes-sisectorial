@@ -4,23 +4,21 @@ Search Page
 ***/
 .search-page .bordered {
   border: 1px solid;
-  border-color: #e7ecf1; }
+  border-color: #cccccc; }
 
 .search-page .search-bar {
-  padding: 20px;
-  margin-bottom: 40px;
-  background-color: #fff; }
+  margin-bottom: 40px; }
   .search-page .search-bar input {
-    border: none;
-    background-color: #f3f6f9;
-    color: #a0a9b4;
-    height: 55px; }
+    background-color: #ffffff;
+    height: 55px;
+    border: 1px solid #e3e3e3 !important;
+    border-radius: 20px 0 0 20px !important; }
   .search-page .search-bar button {
     color: #fff;
     height: 55px;
     width: 130px;
     margin-left: -3px;
-    margin-top: -2px; }
+    border-radius: 0 20px 20px 0 !important; }
   .search-page .search-bar .search-desc {
     margin: 0;
     color: #a0a9b4;
