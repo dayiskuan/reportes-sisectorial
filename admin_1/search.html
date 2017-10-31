@@ -58,7 +58,7 @@
                             </a>
                         </div>
                         <div class="log-in">
-                            <a href="#" class="btn green btn-outline">Iniciar sesión</a>
+                            <a href="login.html" class="btn green btn-outline">Iniciar sesión</a>
                         </div>
                     </div>
                 <!-- END TOP NAVIGATION MENU -->
@@ -260,7 +260,7 @@
                         </ul>
                         <div class="menu-toggler sidebar-toggler hidden-sm hidden-xs"></div>
                         <div class="redes-sociales">
-                        <p>Síguenos en:</p>
+                            <p>Síguenos en:</p>
                             <ul>
                                 <li><a class="facebook" href="#"></a></li>
                                 <li><a class="instagram" href="#"></a></li>
@@ -289,7 +289,7 @@
                                     <i class="fa fa-circle"></i>
                                 </li>
                                 <li>
-                                    <span>Dashboard</span>
+                                    <span>Resultado de Búsqueda</span>
                                 </li>
                             </ul>
                         </div>
@@ -314,22 +314,29 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-7">
-                                    <div class="search-container ">
-                                        <ul class="search-container">
-                                            <li class="search-item clearfix">
+                                    <div class="search-container">
+                                        <ul>
+                                            <li class="search-item destacado clearfix">
                                                 <div class="search-content text-left">
-                                                    <h2 class="search-title">
-                                                        <a href="javascript:;">Metronic Search Results</a>
-                                                    </h2>
-                                                    <p class="search-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur pellentesque auctor. Morbi lobortis, leo in tristique scelerisque, mauris quam volutpat nunc </p>
+                                                    <div class="custom-icon-search"></div>
+                                                    <div class="text-search">
+                                                        <h2 class="search-title">
+                                                            <a href="javascript:;"><span>Metronic Search Results</span><span class="tag">Destacado</span></a>
+                                                            
+                                                        </h2>
+                                                        <p class="search-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur pellentesque auctor. Morbi lobortis, leo in tristique scelerisque, mauris quam volutpat nunc </p>
+                                                    </div>
                                                 </div>
                                             </li>
-                                            <li class="search-item clearfix">
+                                            <li class="search-item destacado clearfix">
                                                 <div class="search-content text-left">
-                                                    <h2 class="search-title">
-                                                        <a href="javascript:;">Lorem ipsum dolor</a>
-                                                    </h2>
-                                                    <p class="search-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur pellentesque auctor. Morbi lobortis, leo in tristique scelerisque, mauris quam volutpat nunc </p>
+                                                    <div class="custom-icon-search"></div>
+                                                    <div class="text-search">
+                                                        <h2 class="search-title">
+                                                            <a href="javascript:;"><span>Lorem ipsum dolor</span><span class="tag">Destacado</span></a>
+                                                        </h2>
+                                                        <p class="search-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur pellentesque auctor. Morbi lobortis, leo in tristique scelerisque, mauris quam volutpat nunc </p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li class="search-item clearfix">
@@ -385,42 +392,43 @@
                                 </div>
                                 <div class="col-md-5">
                                     <!-- BEGIN PORTLET-->
-                                    <div class="portlet light ">
+                                    <div class="portlet light bordered">
                                         <div class="portlet-title">
-                                            <div class="caption">
-                                                <i class="icon-edit font-dark"></i>
-                                                <span class="caption-subject font-dark bold uppercase">Notes</span>
+                                            <div class="tools">
+                                                <a href="" class="collapse" data-original-title="" title=""> </a>
+                                                <a href="" class="reload" data-original-title="" title=""> </a>
+                                                <a href="" class="fullscreen" data-original-title="" title=""> </a>
+                                                <a href="" class="remove" data-original-title="" title=""> </a>
                                             </div>
-                                            <div class="actions">
-                                                <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                    <i class="icon-cloud-upload"></i>
-                                                </a>
-                                                <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                    <i class="icon-wrench"></i>
-                                                </a>
-                                                <a class="btn btn-circle btn-icon-only btn-default fullscreen" href="javascript:;"> </a>
-                                                <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                    <i class="icon-trash"></i>
-                                                </a>
+                                            <div class="caption">
+                                                <i class="icon-bar-chart font-dark hide"></i>
+                                                <span class="caption-subject font-dark bold uppercase">Recomendaciones</span>
+                                                <a href="javascript:;" class="tooltips" data-placement="right" data-original-title="Info"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
                                             </div>
                                         </div>
-                                        <div class="portlet-body">
-                                            <div class="note note-success">
-                                                <h4 class="block">Success! Some Header Goes Here</h4>
-                                                <p> Duis mollis, est non commodo luctus, nisi erat mattis consectetur purus sit amet porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. </p>
+                                        <div class="portlet-body recomendaciones">
+                                            <p class="description-help">Sed malesuada iaculis urna, a tristique ligula viverra eu. Phasellus pretium vitae eros et aliquet.</p>
+                                            <div class="number-expl">
+                                                <div class="number">1</div>
+                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
                                             </div>
-                                            <div class="note note-info">
-                                                <h4 class="block">Info! Some Header Goes Here</h4>
-                                                <p> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, mattis consectetur purus sit amet eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. </p>
+                                            <div class="number-expl">
+                                                <div class="number">2</div>
+                                                Aenean lectus augue, aliquam eget enim a, pulvinar cursus libero. 
                                             </div>
-                                            <div class="note note-danger">
-                                                <h4 class="block">Danger! Some Header Goes Here</h4>
-                                                <p> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit mattis consectetur purus sit amet.\ Cras mattis consectetur purus sit amet fermentum. </p>
+                                            <div class="number-expl">
+                                                <div class="number">3</div>
+                                                Etiam malesuada feugiat fringilla. Proin ullamcorper cursus feugiat. 
                                             </div>
-                                            <div class="note note-warning">
-                                                <h4 class="block">Warning! Some Header Goes Here</h4>
-                                                <p> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit mattis consectetur purus sit amet. Cras mattis consectetur purus sit amet fermentum. </p>
+                                            <div class="number-expl">
+                                                <div class="number">4</div>
+                                                In dui dui, feugiat vel eros id, vehicula ornare enim. 
                                             </div>
+                                            <div class="number-expl">
+                                                <div class="number">5</div>
+                                                Cras a urna eget ex lacinia varius. Morbi nisl felis, feugiat vel tortor eget, sollicitudin lobortis ante.
+                                            </div>
+                                            <div class="clearfix"> </div>
                                         </div>
                                     </div>
                                     <!-- END PORTLET-->

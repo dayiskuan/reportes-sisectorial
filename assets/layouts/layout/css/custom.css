@@ -398,7 +398,10 @@ body {
     .page-sidebar .page-sidebar-menu > li > a {
       background: #f2f2f2; }
     .page-sidebar .page-sidebar-menu .sidebar-search input {
-      background: #f6f6f6 !important; } }
+      background: #f6f6f6 !important; }
+  .redes-sociales {
+    background: #ffffff;
+    padding-top: 10px; } }
 
 @media (max-width: 489px) {
   .page-header.navbar {
