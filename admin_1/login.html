@@ -15,7 +15,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="es">
     <!--<![endif]-->
     <!-- BEGIN HEAD -->
 
@@ -27,7 +27,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <meta content="Preview page of Metronic Admin Theme #1 for " name="description" />
         <meta content="" name="author" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=latin-ext" rel="stylesheet"><link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -60,42 +60,53 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="content">
             <!-- BEGIN LOGIN FORM -->
             <form class="login-form" action="index.html" method="post">
-                <h3 class="form-title font-green">Sign In</h3>
+                <h3 class="form-title">Iniciar sesión</h3>
                 <div class="alert alert-danger display-hide">
                     <button class="close" data-close="alert"></button>
-                    <span> Enter any username and password. </span>
+                    <span>Ingresar un usuario y contraseña válidos.</span>
                 </div>
                 <div class="form-group">
                     <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-                    <label class="control-label visible-ie8 visible-ie9">Username</label>
-                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username" /> </div>
+                    <label class="control-label visible-ie8 visible-ie9">Usuario</label>
+                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Usuario" name="username" /> </div>
                 <div class="form-group">
-                    <label class="control-label visible-ie8 visible-ie9">Password</label>
-                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password" /> </div>
+                    <label class="control-label visible-ie8 visible-ie9">Contraseña</label>
+                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Contraseña" name="password" /> </div>
                 <div class="form-actions">
-                    <button type="submit" class="btn green uppercase">Login</button>
-                    <label class="rememberme check mt-checkbox mt-checkbox-outline">
-                        <input type="checkbox" name="remember" value="1" />Remember
-                        <span></span>
-                    </label>
-                    <a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a>
+                    <div class="container-buttons">
+                        <button type="submit" class="btn green uppercase">Ingresar</button>
+                    </div>
+                    <div class="container-buttons">
+                        <label class="rememberme check mt-checkbox mt-checkbox-outline">
+                            <input type="checkbox" name="remember" value="1" />Recordarme
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="container-buttons">
+                        <a href="javascript:;" id="forget-password" class="forget-password">Olvide mi contraseña</a>
+                    </div>
                 </div>
             </form>
             <!-- END LOGIN FORM -->
             <!-- BEGIN FORGOT PASSWORD FORM -->
             <form class="forget-form" action="index.html" method="post">
-                <h3 class="font-green">Forget Password ?</h3>
-                <p> Enter your e-mail address below to reset your password. </p>
+                <h3>Olvide mi contraseña</h3>
+                <p> ingresa tu e-mail para cambiar tu contraseña.</p>
                 <div class="form-group">
                     <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" /> </div>
                 <div class="form-actions">
-                    <button type="button" id="back-btn" class="btn green btn-outline">Back</button>
-                    <button type="submit" class="btn btn-success uppercase pull-right">Submit</button>
+                    <button type="button" id="back-btn" class="btn green btn-outline pull-left">Atrás</button>
+                    <button type="submit" class="btn green uppercase pull-right">Enviar</button>
                 </div>
             </form>
+            <div class="logo-min">
+                <a href="index.html">
+                    <img src="../assets/layouts/layout/img/logo-min.png" alt="" />
+                </a>
+            </div>
             <!-- END FORGOT PASSWORD FORM -->
         </div>
-        <div class="copyright"> 2014 © Metronic. Admin Dashboard Template. </div>
+        <div class="copyright"> 2017 &copy; Ministerio de Agrigultura y Desarrollo Rural</div>
         <!--[if lt IE 9]>
 <script src="../assets/global/plugins/respond.min.js"></script>
 <script src="../assets/global/plugins/excanvas.min.js"></script> 
@@ -118,7 +129,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
         <!-- END THEME GLOBAL SCRIPTS -->
         <!-- BEGIN PAGE LEVEL SCRIPTS -->
-        <script src="../assets/pages/scripts/login.min.js" type="text/javascript"></script>
+        <script src="../assets/pages/scripts/login.js" type="text/javascript"></script>
         <!-- END PAGE LEVEL SCRIPTS -->
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
         <!-- END THEME LAYOUT SCRIPTS -->

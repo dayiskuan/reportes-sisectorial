@@ -140,7 +140,6 @@ Search Page
             text-decoration: none;
             color: #87d759; }
       .search-content-2 .search-container > ul .search-item > .search-content .search-desc {
-        font-size: 12px;
         color: #666666; }
         .search-content-2 .search-container > ul .search-item > .search-content .search-desc > a {
           color: #49a7fa; }
@@ -164,7 +163,6 @@ Search Page
 
 .search-content-2 .recomendaciones .number-expl {
   color: #999999;
-  font-size: 12px;
   padding: 10px 0;
   float: left;
   width: 100%; }

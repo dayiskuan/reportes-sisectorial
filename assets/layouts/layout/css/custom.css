@@ -1,6 +1,6 @@
 /* here you can put your own css to cutomize and override the theme */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   color: #666666;
   font-weight: 300; }
 

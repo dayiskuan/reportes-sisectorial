@@ -3,7 +3,7 @@
 @import '_variables'; // theme level variables 
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     color: $gray;
     font-weight: 300;
 }
